@@ -4,7 +4,7 @@ import mysql.connector
 db = mysql.connector.connect(
     host = "localhost",
     user = "root", 
-    passwd="Themedici$7",
+    passwd= XXXXX,
     database = "testdatabase"
 )
 
@@ -12,7 +12,7 @@ db = mysql.connector.connect(
 #CREATE DATABASE
 
 mycursor = db.cursor()
-'''
+
 mycursor.execute("CREATE DATABASE testdatabase")  # written first before adding into the "db"
 
 
@@ -131,5 +131,3 @@ mycursor.execute("SELECT * FROM Score")
 
 for x in mycursor:
     print(x)
-
-'''
